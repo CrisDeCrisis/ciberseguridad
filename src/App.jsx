@@ -38,38 +38,54 @@ const App = () => {
       </section>
       <section
         id="anual"
-        className="h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center text-center space-y-2 border-t border-gray-300"
+        className="min-h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center px-6 py-16 text-center border-t border-gray-300"
       >
-        <h1 className="text-3xl font-bold flex items-center space-y-100gap-2">
-        <FontAwesomeIcon icon={faShieldHalved} className="text-amber-500" />Ataques anuales</h1>
-        <p> Compara la cantidad de ciberataques por país entre 2015 y 2024. Esta visualización facilita la comparación clara de los datos entre múltiples países en dicho período.</p>
+        <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-3 mb-4 relative group cursor-pointer">
+          <FontAwesomeIcon icon={faShieldHalved} className="text-amber-500" />
+          <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-amber-500 after:transition-all after:duration-500 group-hover:after:w-full">
+            Ataques anuales
+          </span>
+        </h1>
+        <p className="max-w-2xl text-lg leading-relaxed mb-8"> Compara la cantidad de ciberataques por país entre 2015 y 2024. Esta visualización facilita la comparación clara de los datos entre múltiples países en dicho período.</p>
         <Anual />
       </section>
       <section
         id="mapa"
-        className="h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center text-center space-y-4 border-t border-gray-300"
+        className="min-h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center px-6 py-16 text-center border-t border-gray-300"
       >
-        <h1 className="text-3xl font-bold flex items-center gap-2">
-        <FontAwesomeIcon icon={faMapLocationDot} className="text-amber-500" />Mapa</h1>
-        <p>Este gráfico muestra los países más afectados por ciberataques, basándose en los datos del primer gráfico. La segmentación busca focalizar y alertar sobre las zonas de mayor riesgo.</p>
+        <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-3 mb-4 relative group cursor-pointer">
+          <FontAwesomeIcon icon={faMapLocationDot} className="text-amber-500" />
+          <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-amber-500 after:transition-all after:duration-500 group-hover:after:w-full">
+            Mapa
+          </span>
+        </h1>
+        <p className="max-w-2xl text-lg leading-relaxed mb-8">Este gráfico muestra los países más afectados por ciberataques, basándose en los datos del primer gráfico. La segmentación busca focalizar y alertar sobre las zonas de mayor riesgo.</p>
         <Mapa />
       </section>
       <section
         id="evolucion"
-        className="h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center text-center space-y-4 border-t border-gray-300"
+        className="min-h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center px-6 py-16 text-center border-t border-gray-300"
       >
-        <h1 className="text-3xl font-bold flex items-center gap-2">
-          <FontAwesomeIcon icon={faChartLine} className="text-amber-500"/>evolucion</h1>
-        <p>Muestra la frecuencia de ciberataques a lo largo del tiempo, analizando tendencias para una proyección futura que permita anticipar y fortalecer las defensas ante posibles aumentos.</p>
+        <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-3 mb-4 relative group cursor-pointer">
+          <FontAwesomeIcon icon={faChartLine} className="text-amber-500"/>
+          <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-amber-500 after:transition-all after:duration-500 group-hover:after:w-full">
+            evolucion
+          </span>
+        </h1>
+        <p className="max-w-2xl text-lg leading-relaxed mb-8">Muestra la frecuencia de ciberataques a lo largo del tiempo, analizando tendencias para una proyección futura que permita anticipar y fortalecer las defensas ante posibles aumentos.</p>
         <Evolucion />
       </section>
       <section
         id="tipos"
-        className="h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center text-center space-y-4 border-t border-gray-300"
+        className="min-h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center px-6 py-16 text-center border-t border-gray-300"
       >
-        <h1 className="text-3xl font-bold flex items-center gap-2">
-          <FontAwesomeIcon icon={faBug} className="text-amber-500"/>tipos de ataques</h1>
-        <p> Análisis de la proporción según el tipo de ataque, que permite visualizar la distribución porcentual de los diferentes tipos de ataques y facilitar su comparación jerárquica.
+        <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-3 mb-4 relative group cursor-pointer">
+          <FontAwesomeIcon icon={faBug} className="text-amber-500"/>
+          <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-amber-500 after:transition-all after:duration-500 group-hover:after:w-full">
+            tipos de ataques
+          </span>
+        </h1>
+        <p className="max-w-2xl text-lg leading-relaxed mb-8"> Análisis de la proporción según el tipo de ataque, que permite visualizar la distribución porcentual de los diferentes tipos de ataques y facilitar su comparación jerárquica.
         </p>
         <Tipos />
       </section>
