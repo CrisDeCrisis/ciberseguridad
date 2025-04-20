@@ -30,7 +30,7 @@ const Footer = () => {
           </span>
         </p>
         <p className="text-xs text-gray-400 mt-4">
-          © {new Date().getFullYear()} Cyber Seguridad. Todos los derechos reservados.
+          © {new Date().getFullYear()} Cyber-Seguridad. Todos los derechos reservados.
         </p>
       </div>
     </footer>
