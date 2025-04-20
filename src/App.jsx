@@ -20,7 +20,7 @@ const App = () => {
       <section
         id="inicio"
         className="h-screen bg-cover bg-center relative flex items-center text-violet-950 justify-start px-12"
-        style={{ backgroundImage: 'url("../public/cyber-security-and-information-or-network-protection-future-technology-background-free-vector.jpg")' }}
+        style={{ backgroundImage: 'url("/cyber-security-and-information-or-network-protection-future-technology-background-free-vector.jpg")' }}
       >
         <div className="relative text-white max-w-xl z-10">
           <h1 className="text-5xl sm:text-6xl font-extrabold text-amber-300 mb-4 drop-shadow-lg flex items-center gap-4">
