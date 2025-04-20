@@ -4,6 +4,7 @@ import Anual from "./components/Anual";
 import Mapa from "./components/Mapa";
 import Evolucion from "./components/Evolucion";
 import Tipos from "./components/Tipos";
+import Footer from "./components/Footer"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -52,7 +53,8 @@ const App = () => {
         id="evolucion"
         className="h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center text-center space-y-4 border-t border-gray-300"
       >
-        <h1 className="text-3xl font-bold flex items-center gap-2">evolucion</h1>
+        <h1 className="text-3xl font-bold flex items-center gap-2">
+          <FontAwesomeIcon icon={faChartLine} className="text-amber-500"/>evolucion</h1>
         <p>Muestra la frecuencia de ciberataques a lo largo del tiempo, analizando tendencias para una proyección futura que permita anticipar y fortalecer las defensas ante posibles aumentos.</p>
         <Evolucion />
       </section>
@@ -60,11 +62,13 @@ const App = () => {
         id="tipos"
         className="h-screen bg-amber-50 text-violet-950 flex flex-col items-center justify-center text-center space-y-4 border-t border-gray-300"
       >
-        <h1 className="text-3xl font-bold flex items-center gap-2">tipos de ataques</h1>
+        <h1 className="text-3xl font-bold flex items-center gap-2">
+          <FontAwesomeIcon icon={faBug} className="text-amber-500"/>tipos de ataques</h1>
         <p> Análisis de la proporción según el tipo de ataque, que permite visualizar la distribución porcentual de los diferentes tipos de ataques y facilitar su comparación jerárquica.
         </p>
         <Tipos />
       </section>
+      <Footer/>
     </>
   );
 };

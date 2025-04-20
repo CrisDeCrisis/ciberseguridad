@@ -20,7 +20,7 @@ const Nav = () => {
     <nav className="fixed top-0 w-full bg-violet-950 text-white shadow-md shadow-violet-950 z-50">
       <div className="flex items-center justify-between px-4 py-4">
         <div className="flex items-center space-x-2 group cursor-pointer">
-          <img src="../../public/cyber_security.png" alt="Logo" className="h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110" />
+          <img src="../../public/cyber_security.png" alt="Logo" className="h-10 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:animate-pulse" />
           <span className="text-2xl font-bold tracking-wide transition-all duration-500 transform group-hover:translate-x-1 group-hover:text-amber-300">Ciberseguridad</span>
         </div>
         <ul className="flex space-x-4">
